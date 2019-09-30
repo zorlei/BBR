@@ -1,6 +1,5 @@
- #!/usr/bin/env bash
+﻿ #!/usr/bin/env bash
 
-#脚本制作:cx9208
 kernel_version="4.14.129-bbrplus"
 if [[ ! -f /etc/redhat-release ]]; then
 	echo -e "仅支持centos"
