@@ -1,4 +1,4 @@
-# BBRplus 
+﻿# BBRplus 
 
 在https://blog.csdn.net/dog250/article/details/80629551 中，  
 dog250大神提到了bbr初版的两个问题：bbr在高丢包率下易失速以及bbr收敛慢的问题，  
@@ -20,11 +20,11 @@ dog250大神提到了bbr初版的两个问题：bbr在高丢包率下易失速�
 **不要在生产环境使用一键脚本，建议手动安装，进不了系统用vnc切内核**  
 
 一键脚本（全系统）：   
-见https://github.com/chiakge/Linux-NetSpeed   
+见https://github.com/zorlei/BBR-Linux   
 
 一键脚本（仅CentOS）：  
 ```bash
-wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh
+wget "https://github.com/zorlei/BBR/blob/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh
 ```
 安装后，执行uname -r，显示4.14.129-bbrplus则切换内核成功  
 执行lsmod | grep bbr，显示有bbrplus则开启成功   
@@ -35,7 +35,7 @@ wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmo
 
 2.  
 下载内核  
-wget https://github.com/cx9208/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm  
+wget https://github.com/zorlei/BBR/blob/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm  
 
 3.  
 安装内核  
